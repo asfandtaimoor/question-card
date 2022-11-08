@@ -1,0 +1,70 @@
+.question {
+  max-width: 1600px;
+  padding: 100px 0px;
+
+  .header {
+    &__link {
+      font-family: 'IBM Plex Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      background: linear-gradient(98.24deg, #6ddcff 0%, #7f60f9 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    &__tittle {
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: clamp(2rem, 4vw, 5rem);
+      line-height: 90px;
+      color: #ffffff;
+      border-bottom: 3px solid rgba(113, 113, 122, 1);
+    }
+  }
+
+  .list {
+    &-header {
+      border-bottom: 3px solid rgba(113, 113, 122, 1);
+      padding: 15px 0px;
+    }
+    &__q {
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: clamp(1.5rem, 2vw, 2.5rem);
+      line-height: 54px;
+      color: #ffffff;
+    }
+    &__arrow {
+      cursor: pointer;
+      transform: rotate(180deg);
+      transition: all 0.5s;
+      padding: 10px;
+      &:hover {
+        transform: rotate(-180deg);
+      }
+    }
+    #des2 {
+      display: block;
+    }
+    .des {
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: clamp(1rem, 3vw, 1.376rem);
+      padding: 20px 0px;
+      line-height: 40px;
+      color: #d4d4d8;
+      display: none;
+      border-bottom: 3px solid rgba(113, 113, 122, 1);
+    }
+  }
+}
